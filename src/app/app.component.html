@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Welcome to Angular {{ title }}!
+  </h1>
+  <ng-wf-designer-host
+    *ngIf="dataAvailable"
+    [activityDefinition]="activityDefinition"
+    [(workflowModel)]="workflowModel"
+  >
+  </ng-wf-designer-host>
+  <pre>
+      {{ workflowModel | json }}
+  </pre>
+</div>
